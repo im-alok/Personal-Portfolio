@@ -139,7 +139,8 @@ const projects = [
         },
     ],
     image: "https://res.cloudinary.com/drpcrwqf4/image/upload/v1702397796/Personal%20Portfolio/project%20photos/Screenshot_from_2023-12-12_21-39-58_tmulvw.png",
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/im-alok/Personal-Portfolio.git",
+    live_link:'#'
     },
     {
         name: "Ed-Tech Platform (Udemy Clone)",
