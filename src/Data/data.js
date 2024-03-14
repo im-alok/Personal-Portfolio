@@ -152,6 +152,10 @@ const projects = [
             color: "blue-text-gradient",
             },
             {
+                name: "Redux",
+                color: "pink-text-gradient",
+            },
+            {
             name: "mongodb",
             color: "green-text-gradient",
             },
