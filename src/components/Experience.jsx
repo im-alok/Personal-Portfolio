@@ -29,7 +29,7 @@ function Experience(){
             <h2 className={styles.sectionHeadText}>Works Section</h2>
         </motion.div>
 
-        <div className="mt-20 flex flex-col ">
+        <div className="mt-5 xs:mt-20 flex flex-col ">
           
             {
               experiences.length > 0 ?(
@@ -45,7 +45,7 @@ function Experience(){
             ) :
             ( 
               <div>
-                  <div className="text-red-700 text-3xl font-bold">Not Worked in any company yet Looking for the opportunity!!</div>
+                  <div className="text-red-700 text-base xs:text-3xl font-bold">Not Worked in any company yet Looking for the opportunity!!</div>
                   <br />
                   <a href="#contact"><button className="button">Hire Me</button></a>
               </div>

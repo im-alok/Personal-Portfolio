@@ -7,12 +7,12 @@ import { projects } from "../Data/data";
 import { fadeIn,textVariant } from "../Utils/motion";
 
 
-function ProjectCard({ index , name , description , tags , image ,source_code_link }){
+function ProjectCard({ index , name , description , tags , image ,source_code_link,live_link }){
   
   return(
 
     <Tilt
-    className="xs:w-[320px] w-[280px]  ">
+    className="xs:w-[350px] w-[280px]  ">
       <motion.div
       variants={fadeIn("right","spring" ,0.5 * index , 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card "
@@ -24,7 +24,8 @@ function ProjectCard({ index , name , description , tags , image ,source_code_li
           speed:450
         }}
 
-        className="bg-tertiary rounded-2xl  p-5 w-full sm:w-[320px]" 
+        className="bg-tertiary rounded-2xl  p-5 w-full h-[500px] sm:w-[350px] flex flex-col justify-evenly" 
+        onClick={()=>window.open(live_link,"_blank")}
         >
             <div className="relative w-full h-[180px]">
               <img src={image} alt={name}
@@ -47,7 +48,7 @@ function ProjectCard({ index , name , description , tags , image ,source_code_li
 
             <div className="mt-5 ">
                 <h3 className="text-white text-[24px] font-bold">{name}</h3>
-                <p className="mt-2 text-secondary text-[12px]">{description}</p>
+                <p className="mt-2 text-secondary text-[12px]">{description.split(" ").slice(0,21).join(" ")}</p>
             </div>
 
             <div className="flex flex-row flex-wrap gap-2 mt-4">
