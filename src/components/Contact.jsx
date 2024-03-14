@@ -75,10 +75,10 @@ function Contact(){
     >
       <span className="hash-span " id="contact">&nbsp;</span>
         
-        <div className="xl:mt-12 xl:flex flex gap-10 overflow-hidden">
+        <div className="xl:mt-12 xl:flex flex flex-wrap-reverse sm:flex-row gap-10 overflow-hidden">
           <motion.div
           variants={slideIn('left',"tween ",0.2 , 0.5)}
-          className="flex-[0.75] bg-black-200 p-8 rounded-2xl "
+          className="w-[50%] flex-1 sm:flex-[0.75] bg-black-200 p-8 rounded-2xl sm:w-full"
           >
             <p className={styles.sectionSubText}>Get in Touch</p>
             <h3 className={styles.sectionHeadText}>Contact.</h3>

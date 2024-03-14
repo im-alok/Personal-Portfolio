@@ -60,7 +60,7 @@ function About(){
               I'm a Skilled Software developer with Experience in JavaScript , and Expertise in the frameWorks like React.js , Node.js and Express.js. I'm a quick learner and collaborate closely with the client to create efficient, scalable, and user-friendly Solutions that solve real world problems. Let's Work Together to bring your ideas to the life!!
             </motion.p>
 
-            <div className="mt-20 flex flex-wrap gap-10 ">
+            <div className="mt-20 flex sm:flex-row flex-col items-center gap-10 ">
 
               {
                 services.map( (service, index) => (
